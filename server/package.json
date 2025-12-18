@@ -1,0 +1,30 @@
+diff --git a/server/package.json b/server/package.json
+new file mode 100644
+index 0000000000000000000000000000000000000000..19181dbd8cdae1f7ae946077ff23179e5d5c5c10
+--- /dev/null
++++ b/server/package.json
+@@ -0,0 +1,24 @@
++{
++  "name": "server",
++  "version": "1.0.0",
++  "description": "Production reporting API for mixing and pressing",
++  "main": "src/server.js",
++  "scripts": {
++    "start": "node src/server.js",
++    "dev": "NODE_ENV=development node src/server.js"
++  },
++  "keywords": [
++    "production",
++    "mixing",
++    "pressing",
++    "inventory"
++  ],
++  "author": "",
++  "license": "ISC",
++  "type": "commonjs",
++  "dependencies": {
++    "cors": "^2.8.5",
++    "express": "^4.19.2",
++    "sqlite3": "^5.1.7"
++  }
++}
